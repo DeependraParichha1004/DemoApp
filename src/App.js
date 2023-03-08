@@ -1,24 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
-
+import { FrontPage } from './MyComponents/FrontPage';
+import { Content } from './MyComponents/Content';
 function App() {
+  const list1 = ["Pet", "Max"];
+  // let res=list1.map((item)=>{
+  //   return (
+  //     <div></div>
+  //   )
+  // })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <FrontPage />
+    <Content res={list1} />
+    </>
+    
   );
 }
 
